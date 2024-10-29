@@ -1,0 +1,7 @@
+import pyqrcode
+import png
+from pyqrcode import QRCode
+
+address = 'LINK'
+url = pyqrcode.create(address)
+url.png('NAME.png', scale=8)
